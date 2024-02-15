@@ -1,0 +1,92 @@
+#headerHome{
+  background-color: rgb(92, 173, 88);
+  border: 3px solid black;
+}
+
+.navbar-link {
+    background-color: rgb(241, 240, 240);
+    height: 50px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .navbar-link:hover {
+    transform: scale(1.2);
+    background-color: rgb(98, 237, 98);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  .navbar-link a {
+    color: black;
+    font-family: "Arial", sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .navbar-link:hover a {
+    color: white;
+  }
+  
+  .navbar-link a:hover {
+    text-decoration: none;
+  }
+  
+  .header {
+    color: #36a0ff;
+    font-size: 27px;
+    padding: 10px;
+  }
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    width: 100%;
+    background-color: black;
+    padding: 7px;
+    position: absolute;
+    margin: 2px;
+  }
+
+  .mdb {
+    float: right;
+    margin: 3px;
+  }
+
+  .map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.sidebar {
+  position: absolute;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: left 0.3s ease;
+  z-index: 999; /* Ajusta este valor según sea necesario */
+}
+
+.content {
+margin-left: 200px;
+/* Ajustado para que el contenido principal esté al lado de la barra lateral */
+transition: margin-left 0.3s ease;
+}
